@@ -1,0 +1,15 @@
+C:\Exam Project\ExamProject\Exam.Appilication\bin\Debug\net8.0\Exam.Appilication.deps.json
+C:\Exam Project\ExamProject\Exam.Appilication\bin\Debug\net8.0\Exam.Appilication.dll
+C:\Exam Project\ExamProject\Exam.Appilication\bin\Debug\net8.0\Exam.Appilication.pdb
+C:\Exam Project\ExamProject\Exam.Appilication\bin\Debug\net8.0\Exam.Domain.dll
+C:\Exam Project\ExamProject\Exam.Appilication\bin\Debug\net8.0\Exam.Domain.pdb
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.csproj.AssemblyReference.cache
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.AssemblyInfoInputs.cache
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.AssemblyInfo.cs
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.csproj.CoreCompileInputs.cache
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.csproj.CopyComplete
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.dll
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\refint\Exam.Appilication.dll
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.pdb
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\ref\Exam.Appilication.dll

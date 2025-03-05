@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Exam.Appilication/1.0.0": {
+        "dependencies": {
+          "Exam.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Exam.Appilication.dll": {}
+        }
+      },
+      "Exam.Domain/1.0.0": {
+        "runtime": {
+          "Exam.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Exam.Appilication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Exam.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
