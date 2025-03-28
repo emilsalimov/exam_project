@@ -1,4 +1,5 @@
 using Exam.Appilication.Abstraction.Repository;
+using Exam.Appilication.Abstraction.Services;
 using Exam.Persistence.Contex;
 using Exam.Persistence.Implimentation.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ builder.Services.AddSwaggerGen();
 
 #region Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 #endregion
 
 var app = builder.Build();

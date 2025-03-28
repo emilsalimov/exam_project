@@ -2,7 +2,7 @@
 using FluentValidation;
 
 namespace Exam.Appilication.Validators.Exam;
-public class AddExamDtoValidator : AbstractValidator<AddExamDTO>
+public class AddExamDtoValidator : AbstractValidator<AddExamDto>
 {
     public AddExamDtoValidator()
     {

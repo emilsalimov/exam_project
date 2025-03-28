@@ -11,7 +11,7 @@ public class Repository<T> : IRepository<T> where T : class
     public DbSet<T> Table => _context.Set<T>();
     public Repository(AppDbContext context)
     {
-        context = _context;
+          _context = context;
     }
 
     public Task<IQueryable<T>> GetAllAsync()
