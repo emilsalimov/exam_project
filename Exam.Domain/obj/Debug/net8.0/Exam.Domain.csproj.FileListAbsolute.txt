@@ -9,3 +9,4 @@ C:\Exam Project\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.dll
 C:\Exam Project\ExamProject\Exam.Domain\obj\Debug\net8.0\refint\Exam.Domain.dll
 C:\Exam Project\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.pdb
 C:\Exam Project\ExamProject\Exam.Domain\obj\Debug\net8.0\ref\Exam.Domain.dll
+C:\Exam Project\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.sourcelink.json

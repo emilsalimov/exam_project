@@ -16,7 +16,7 @@ public class  Service<T> : IService<T> where T : class
         await _repository.AddAsync(entity);
     }
 
-    public void DeleteAsync(int id)
+    public void Delete(int id)
     {
          _repository.Delete(id);
     }

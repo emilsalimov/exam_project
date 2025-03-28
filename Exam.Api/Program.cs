@@ -1,4 +1,6 @@
+using Exam.Appilication.Abstraction.Repository;
 using Exam.Persistence.Contex;
+using Exam.Persistence.Implimentation.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+#region Repositories
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+#endregion
 
 var app = builder.Build();
 

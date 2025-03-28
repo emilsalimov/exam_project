@@ -13,3 +13,4 @@ C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication
 C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\refint\Exam.Appilication.dll
 C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.pdb
 C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\ref\Exam.Appilication.dll
+C:\Exam Project\ExamProject\Exam.Appilication\obj\Debug\net8.0\Exam.Appilication.sourcelink.json

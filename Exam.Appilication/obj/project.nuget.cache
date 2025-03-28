@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bUEoQCOkhtYqNTdzKUhh20r9kq3L1LPW4VtVbO+kgxz6G5oY9LFo2QxhM1C/zUsgCaqGz7soxlDxOnhotFhWSA==",
+  "dgSpecHash": "YpcGbfEHtX/uY2UuNxYDfkYfNlrBzYIra/p+CDQJFSp9tAcXiToIsi/8ppqqYCfsrN6qmq8P9ytm7FcSv81d1Q==",
   "success": true,
   "projectFilePath": "C:\\Exam Project\\ExamProject\\Exam.Appilication\\Exam.Appilication.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\esali\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512"
+  ],
   "logs": []
 }

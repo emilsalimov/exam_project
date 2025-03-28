@@ -17,3 +17,4 @@ C:\Exam Project\ExamProject\Exam.Persistence\obj\Debug\net8.0\Exam.Persistence.p
 C:\Exam Project\ExamProject\Exam.Persistence\obj\Debug\net8.0\ref\Exam.Persistence.dll
 C:\Exam Project\ExamProject\Exam.Persistence\bin\Debug\net8.0\Exam.Persistence.runtimeconfig.json
 C:\Exam Project\ExamProject\Exam.Persistence\obj\Debug\net8.0\Exam.Persistence.genruntimeconfig.cache
+C:\Exam Project\ExamProject\Exam.Persistence\obj\Debug\net8.0\Exam.Persistence.sourcelink.json

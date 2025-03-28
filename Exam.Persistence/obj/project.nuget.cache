@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "86agElB/JA+F8RmQnWRgcyU6bDMvWzqQO+JbaMQpxgHYHbzlRDftWvbukbZv2oEXzndKOqVEWwNygm5tUFmaJg==",
+  "dgSpecHash": "xn2aw34D3FDlvX7Td93TNuWxiCuHAIw7fdx9zChfoR3BPnl4mnmzJHrfDmenxXn0YVN6i4OpVacA0fLb7Z7mFg==",
   "success": true,
   "projectFilePath": "C:\\Exam Project\\ExamProject\\Exam.Persistence\\Exam.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\esali\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\esali\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\esali\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\esali\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\esali\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\esali\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
