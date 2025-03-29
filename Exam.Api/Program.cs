@@ -2,6 +2,7 @@ using Exam.Appilication.Abstraction.Repository;
 using Exam.Appilication.Abstraction.Services;
 using Exam.Persistence.Contex;
 using Exam.Persistence.Implimentation.Repository;
+using Exam.Persistence.Implimentation.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,9 +21,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-#region Repositories
+#region User Repositories and Service
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+#endregion
+
+#region  Exam Repositories and Service
+builder.Services.AddScoped<IExamRepository, ExamRepository>();
+builder.Services.AddScoped<IExamService, ExamService>();
 #endregion
 
 var app = builder.Build();

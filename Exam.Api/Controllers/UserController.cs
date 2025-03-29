@@ -28,7 +28,7 @@ namespace Exam.API.Controllers
                 CreateDate=DateTime.Now
             };
             _userService.AddAsync(user);
-            return Ok("Success add User");
+            return Ok("User added successfully");
         }
 
         [HttpDelete]
