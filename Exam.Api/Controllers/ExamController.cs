@@ -1,8 +1,8 @@
-﻿using Exam.Appilication.Abstraction.Services;
+﻿using AutoMapper;
+using Exam.Appilication.Abstraction.Services;
 using Exam.Appilication.Dtos.Exam;
-using Exam.Domain.Entities;
+using Exam.Appilication.Dtos.User;
 using Microsoft.AspNetCore.Mvc;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Exam.API.Controllers
 {
@@ -11,9 +11,11 @@ namespace Exam.API.Controllers
     public class ExamController : ControllerBase
     {
         private readonly IExamService _examService;
-        public ExamController(IExamService examService)
+        private readonly IMapper _mapper;
+        public ExamController(IExamService examService, IMapper mapper)
         {
             _examService = examService;
+            _mapper = mapper;
         }
         [HttpPost]
 
@@ -66,6 +68,20 @@ namespace Exam.API.Controllers
 
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetByIdExam(int id)
+        {
+            var result = await _examService.GetByIdAsync(id);
+            var res = _mapper.Map<GetByIdExamDto>(result);
+            return Ok(res);
+        }
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAllExam()
+        {
+            var result = await _examService.GetAllAsync();
+            var res = _mapper.Map<List<GetAllExamDto>>(result.ToList());
+            return Ok(res);
 
+        }
     }
 }

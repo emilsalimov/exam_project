@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UGP2EauelyMNCY+d1Ok9rTl0udyDwVBU7/bDKE1WaEXoU2YGNr/NgTXPjoxcuuSOmABchfzOYP/vrST5Yjg3nQ==",
+  "dgSpecHash": "OxLx9UbDDC4qHOe6eDvPs54fHScpz+sjvcp4FrzP64jtHfTn4KJ61l7jo2b8NqTgIcwfPYDl3hXgw24nIrgAAQ==",
   "success": true,
   "projectFilePath": "C:\\Exam Project\\ExamProject\\Exam.Api\\Exam.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\esali\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\esali\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\esali\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\esali\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",

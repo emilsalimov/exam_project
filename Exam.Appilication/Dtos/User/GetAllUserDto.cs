@@ -1,0 +1,3 @@
+﻿namespace Exam.Appilication.Dtos.User;
+
+public record GetAllUserDto(int id, string Name, string FullName, string Password, string Email, string Role);

@@ -1,3 +1,4 @@
+using Exam.API.Profiles;
 using Exam.Appilication.Abstraction.Repository;
 using Exam.Appilication.Abstraction.Services;
 using Exam.Persistence.Contex;
@@ -30,6 +31,16 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IExamRepository, ExamRepository>();
 builder.Services.AddScoped<IExamService, ExamService>();
 #endregion
+
+#region  Answer Repositories and Service
+builder.Services.AddScoped<IAnswerRepository, AnswerRepository>();
+builder.Services.AddScoped<IAnswerService, AnswerService>();
+#endregion
+
+builder.Services.AddAutoMapper(typeof(UserMapper));
+builder.Services.AddAutoMapper(typeof(AnswerMapper));
+builder.Services.AddAutoMapper(typeof(ExamMapper));
+
 
 var app = builder.Build();
 

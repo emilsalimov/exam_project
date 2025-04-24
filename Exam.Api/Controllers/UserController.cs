@@ -1,4 +1,5 @@
-﻿using Exam.Appilication.Abstraction.Services;
+﻿using AutoMapper;
+using Exam.Appilication.Abstraction.Services;
 using Exam.Appilication.Dtos.User;
 using Exam.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -10,10 +11,13 @@ namespace Exam.API.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IMapper _mapper;
 
-        public UserController(IUserService userService)
+
+        public UserController(IUserService userService,IMapper mapper)
         {
             _userService = userService;
+            _mapper = mapper;
         }
         [HttpPost]
 
@@ -60,12 +64,21 @@ namespace Exam.API.Controllers
 
             _userService.Update(user);
             return Ok("User updated successfully");
-
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetByIdUser(int id) {
+            var result =await _userService.GetByIdAsync(id);
+            var res=_mapper.Map<GetByIdUserDto>(result);
+            return Ok(res);
         }
 
-
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAllUser() { 
+           var result = await _userService.GetAllAsync();
+            var res = _mapper.Map<List<GetAllUserDto>>(result.ToList());
+            return Ok(res);
+            
+        }
     }
-
-
 }
 
