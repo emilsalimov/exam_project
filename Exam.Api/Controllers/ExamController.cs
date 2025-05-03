@@ -19,7 +19,7 @@ namespace Exam.API.Controllers
         }
         [HttpPost]
 
-        public IActionResult AddExam(AddExamDto request)
+        public async Task<IActionResult> AddExam(AddExamDto request)
         {
 
             Domain.Entities.Exam exam = new Domain.Entities.Exam()
@@ -30,7 +30,7 @@ namespace Exam.API.Controllers
                 Duration = request.Duration,
 
             };
-            _examService.AddAsync(exam);
+          await  _examService.AddAsync(exam);
             return Ok("Exam added successfully");
         }
 

@@ -21,7 +21,7 @@ namespace Exam.API.Controllers
         }
         [HttpPost]
 
-        public IActionResult AddUser(AddUserDto request)
+        public async Task <IActionResult> AddUser(AddUserDto request)
         {
             User user = new User() {
                 Name=request.Name, 
@@ -31,7 +31,7 @@ namespace Exam.API.Controllers
                 Role=request.Role, 
                 CreateDate=DateTime.Now
             };
-            _userService.AddAsync(user);
+            await _userService.AddAsync(user);
             return Ok("User added successfully");
         }
 

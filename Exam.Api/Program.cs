@@ -37,9 +37,28 @@ builder.Services.AddScoped<IAnswerRepository, AnswerRepository>();
 builder.Services.AddScoped<IAnswerService, AnswerService>();
 #endregion
 
+#region  Question Repositories and Service
+builder.Services.AddScoped<IQuestionRepository, QuestionRepository>();
+builder.Services.AddScoped<IQuestionService, QuestionService>();
+#endregion
+
+#region  StudentExam Repositories and Service
+builder.Services.AddScoped<IStudentExamRepository, StudentExamRepository>();
+builder.Services.AddScoped<IStudentExamService, StudentExamService>();
+#endregion
+
+#region  StudentResult Repositories and Service
+builder.Services.AddScoped<IStudentResultRepository, StudentResultRepository>();
+builder.Services.AddScoped<IStudentResultService, StudentResultService>();
+#endregion
+
 builder.Services.AddAutoMapper(typeof(UserMapper));
 builder.Services.AddAutoMapper(typeof(AnswerMapper));
 builder.Services.AddAutoMapper(typeof(ExamMapper));
+builder.Services.AddAutoMapper(typeof(QuestionMapper));
+builder.Services.AddAutoMapper(typeof(StudentExamMapper));
+builder.Services.AddAutoMapper(typeof(StudentResultMapper));
+
 
 
 var app = builder.Build();

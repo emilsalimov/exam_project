@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Exam.Appilication.Abstraction.Services;
 using Exam.Appilication.Dtos.Answer;
+using Exam.Appilication.Dtos.Exam;
 using Exam.Appilication.Dtos.User;
 using Exam.Domain.Entities;
+using Exam.Persistence.Implimentation.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Exam.API.Controllers
@@ -20,7 +22,7 @@ namespace Exam.API.Controllers
         }     
         [HttpPost]
 
-        public IActionResult AddAnswer(AddAnswerDto request)
+        public async Task<IActionResult> AddAnswer(AddAnswerDto request)
         {
             Answer answer = new Answer()
             {
@@ -28,7 +30,7 @@ namespace Exam.API.Controllers
                 IsCorrect = request.IsCorrect,
                 QuestionId = request.QuestionId,
             };
-            _answerService.AddAsync(answer);
+        await    _answerService.AddAsync(answer);
             return Ok("Answer added successfully");
         }
         [HttpDelete]
@@ -59,11 +61,20 @@ namespace Exam.API.Controllers
             return Ok("Answer updated successfully");
         }
         [HttpGet]
-        public async Task<IActionResult> GetByIdAnswer(int id)
+        public async Task<IActionResult> GetByIdUser(int id)
         {
             var result = await _answerService.GetByIdAsync(id);
-            var res = _mapper.Map<GetByIdUserDto>(result);
+            var res = _mapper.Map<GetByIdAnswerDto>(result);
             return Ok(res);
+        }
+
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAllExam()
+        {
+            var result = await _answerService.GetAllAsync();
+            var res = _mapper.Map<List<GetAllAnswerDto>>(result.ToList());
+            return Ok(res);
+
         }
     }
 }
